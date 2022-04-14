@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(173, 177, 173);
+  box-sizing: border-box;
+}
+
+.slider {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  width: 700px;
+  height: 200px;
+  background-color: blue; 
+  border-radius: 10px;
+}
+
+.slider__wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-img {
+  display: none;   
+  // display: block;
+  width: 200px;
+  height: 200px;
+  font-size:50px;
+  text-align: center;
+  line-height: 150px; 
+}
+
+.slider-img.active {
+  display: block; 
+}
+
+.slider-btn {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover{
+    background-color: black;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+}
+
+.button__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wrapper-paginator {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.paginator-item {
+  width: 30px;
+  height: 30px;
+  backgroundi: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor:pointer;
+}
+
+.paginator-item.active {
+  background-image: url('../IMG/dot-beginners.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.test {
+  fill: rgb(128, 30, 0);
+}
+
